@@ -7,17 +7,19 @@
 
 #include "Soldier.h"
 
-class PrivateSoldier : Soldier {
-private:
+class PrivateSoldier : public Soldier {
+protected:
     int *grades;
 public:
     PrivateSoldier(int id, int numOfOperations, const string &firstName, const string &lastName, int *grades);
 
     PrivateSoldier(const PrivateSoldier &);
 
+    PrivateSoldier(PrivateSoldier &&) noexcept ;
+
     ~PrivateSoldier() override;
 
-    bool medal() override;
+    bool medal() const override;
 
     float average() const;
 

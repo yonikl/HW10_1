@@ -19,7 +19,7 @@ PrivateSoldier::~PrivateSoldier() {
     delete[] grades;
 }
 
-bool PrivateSoldier::medal() {
+bool PrivateSoldier::medal() const {
     if(numOfOperations >= 10 && average() >= 95) return true;
     return false;
 }
@@ -47,5 +47,11 @@ void PrivateSoldier::print() const {
         for (int i = 0; i < numOfOperations - 1; ++i) {
             cout << grades[i] << " ";
         }
+        cout << endl;
     }
+}
+
+PrivateSoldier::PrivateSoldier(PrivateSoldier && p) noexcept : Soldier(p){
+    grades = p.grades;
+    p.grades = nullptr;
 }

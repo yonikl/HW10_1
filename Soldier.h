@@ -19,9 +19,11 @@ public:
 
     Soldier(const Soldier &);
 
+    Soldier(const Soldier&&) noexcept ;
+
     virtual ~Soldier();
 
-    virtual bool medal() = 0;
+    virtual bool medal() const = 0;
 
     int getId() const;
 

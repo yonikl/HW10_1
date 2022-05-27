@@ -67,6 +67,18 @@ build CMakeFiles/HW10_1.dir/PrivateSoldier.cpp.obj: CXX_COMPILER__HW10_1_Debug C
   OBJECT_DIR = CMakeFiles\HW10_1.dir
   OBJECT_FILE_DIR = CMakeFiles\HW10_1.dir
 
+build CMakeFiles/HW10_1.dir/Commander.cpp.obj: CXX_COMPILER__HW10_1_Debug C$:/Users/Yoni/CLionProjects/HW10.1/Commander.cpp || cmake_object_order_depends_target_HW10_1
+  DEP_FILE = CMakeFiles\HW10_1.dir\Commander.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\HW10_1.dir
+  OBJECT_FILE_DIR = CMakeFiles\HW10_1.dir
+
+build CMakeFiles/HW10_1.dir/Officer.cpp.obj: CXX_COMPILER__HW10_1_Debug C$:/Users/Yoni/CLionProjects/HW10.1/Officer.cpp || cmake_object_order_depends_target_HW10_1
+  DEP_FILE = CMakeFiles\HW10_1.dir\Officer.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\HW10_1.dir
+  OBJECT_FILE_DIR = CMakeFiles\HW10_1.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target HW10_1
@@ -75,7 +87,7 @@ build CMakeFiles/HW10_1.dir/PrivateSoldier.cpp.obj: CXX_COMPILER__HW10_1_Debug C
 #############################################
 # Link the executable HW10_1.exe
 
-build HW10_1.exe: CXX_EXECUTABLE_LINKER__HW10_1_Debug CMakeFiles/HW10_1.dir/main.cpp.obj CMakeFiles/HW10_1.dir/Soldier.cpp.obj CMakeFiles/HW10_1.dir/PrivateSoldier.cpp.obj
+build HW10_1.exe: CXX_EXECUTABLE_LINKER__HW10_1_Debug CMakeFiles/HW10_1.dir/main.cpp.obj CMakeFiles/HW10_1.dir/Soldier.cpp.obj CMakeFiles/HW10_1.dir/PrivateSoldier.cpp.obj CMakeFiles/HW10_1.dir/Commander.cpp.obj CMakeFiles/HW10_1.dir/Officer.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\HW10_1.dir

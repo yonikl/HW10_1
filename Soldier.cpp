@@ -29,16 +29,23 @@ const string &Soldier::getLastName() const {
 }
 
 ostream &operator<<(ostream &os, const Soldier &soldier) {
-    os << "ID " << soldier.id << "/nfirst name: " << soldier.firstName
-       << "\nlast name: " << soldier.lastName << "\nnum operations: " << soldier.numOfOperations;
+    os << "ID " << soldier.id << "\nfirst name: " << soldier.firstName
+       << "\nlast name: " << soldier.lastName << "\nnum operations: " << soldier.numOfOperations << endl;
     return os;
 }
 
 void Soldier::print() const{
-    cout << this << endl;
+    cout << this;
 }
 
 Soldier::Soldier(const Soldier &s) {
+    this->id = s.id;
+    this->firstName = s.firstName;
+    this->lastName = s.lastName;
+    this->numOfOperations = s.numOfOperations;
+}
+
+Soldier::Soldier(const Soldier && s) {
     this->id = s.id;
     this->firstName = s.firstName;
     this->lastName = s.lastName;
