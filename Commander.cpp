@@ -25,3 +25,7 @@ bool Commander::isCombat() const {
 }
 
 Commander::Commander(Commander && c) noexcept : PrivateSoldier(c), combat(c.combat) {}
+
+string Commander::soldierType() const {
+    return "commander";
+}

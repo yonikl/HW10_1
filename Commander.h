@@ -23,6 +23,8 @@ public:
 
     bool isCombat() const;
 
+    string soldierType() const override;
+
 };
 
 

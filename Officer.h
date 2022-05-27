@@ -21,6 +21,8 @@ public:
     int getSociometricScore() const;
 
     bool medal() const override;
+
+    string soldierType() const override;
 };
 
 

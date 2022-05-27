@@ -24,3 +24,7 @@ bool Officer::medal() const {
     if(numOfOperations >= 2 && sociometricScore >= 92) return true;
     return false;
 }
+
+string Officer::soldierType() const {
+    return "officer";
+}
