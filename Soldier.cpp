@@ -34,6 +34,13 @@ ostream &operator<<(ostream &os, const Soldier &soldier) {
     return os;
 }
 
-void Soldier::print() {
+void Soldier::print() const{
     cout << this << endl;
+}
+
+Soldier::Soldier(const Soldier &s) {
+    this->id = s.id;
+    this->firstName = s.firstName;
+    this->lastName = s.lastName;
+    this->numOfOperations = s.numOfOperations;
 }
